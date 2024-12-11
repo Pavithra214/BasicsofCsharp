@@ -1,0 +1,65 @@
+﻿<Window x:Class="Developer.Game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Developer"
+        mc:Ignorable="d"
+        Title="Game" Height="800" Width="800">
+    <StackPanel Background="MediumTurquoise">
+        <StackPanel HorizontalAlignment="Center" CanHorizontallyScroll="True">
+            <Label Content="Lucky Draw" FontWeight="ExtraBold" FontSize="30" Foreground="DarkMagenta"></Label>
+        </StackPanel>
+        
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Start" Margin="0,30,10,0" Background="Green" Height="50" Width="70" x:Name="Startbtn" Click="Startbtn_Click"></Button>
+          
+            <Button Content="Stop" Margin="0,30,0,0" Background="Red" Height="50" Width="70" x:Name="Stopbtn" Click="Stopbtn_Click"></Button>
+            <Button Content="New" Margin="10,30,0,0" Background="Blue" Height="50" Width="70" x:Name="Newbtn" Click="Newbtn_Click"></Button>
+                
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="You have won: " FontSize="15"  Foreground="DarkBlue" FontWeight="Black"></Label>
+            <Label x:Name="lblamt" Content="0" FontSize="15" FontWeight="Black"></Label>
+            
+        </StackPanel>
+        <StackPanel x:Name="mainstack" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Content="1" Tag="0" Height="80" Width="80" Background="Crimson" Margin="10,0,10,0" x:Name="Btn" Click="Btn_Click"></Button>
+            <Button Content="2" Tag="10" Height="80" Width="80" Margin="10,0,10,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+            <Button Content="3" Tag="0" Height="80" Width="80" Margin="10,0,10,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+            <Button Content="4" Tag="0" Height="80" Width="80" Margin="10,0,10,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+            <Button Content="5" Tag="0" Height="80" Width="80" Margin="10,0,10,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+         </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Content="6" Tag="1000" Height="80" Width="80" Background="DarkOrange"  Foreground="DarkBlue" FontWeight="ExtraBold" Margin="20,0,20,0" Click="Btn_Click"></Button>
+            <Button Content="7" Tag="0" Height="80" Width="80" Background="DarkOrange"  Foreground="DarkBlue" FontWeight="ExtraBold" Margin="20,0,20,0" Click="Btn_Click"></Button>
+            <Button Content="8" Tag="0" Height="80" Width="80" Background="DarkOrange"  Foreground="DarkBlue" FontWeight="ExtraBold" Margin="20,0,20,0" Click="Btn_Click"></Button>
+            <Button Content="9" Tag="0" Height="80" Width="80" Background="DarkOrange"  Foreground="DarkBlue" FontWeight="ExtraBold" Margin="20,0,20,0" Click="Btn_Click"></Button>
+            <Button Content="10" Tag="0" Height="80" Width="80" Background="DarkOrange"  Foreground="DarkBlue" FontWeight="ExtraBold" Margin="20,0,20,0" Click="Btn_Click"></Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Content="11" Tag="0" Height="80" Width="80"  Margin="30,0,30,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+            <Button Content="12" Tag="0" Height="80" Width="80" Margin="30,0,30,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+            <Button Content="13" Tag="0" Height="80" Width="80" Margin="30,0,30,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+            <Button Content="14" Tag="200" Height="80" Width="80" Margin="30,0,30,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+            <Button Content="15" Tag="0" Height="80" Width="80" Margin="30,0,30,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Content="16" Tag="0" Height="80" Width="80"  Margin="20,0,20,0" Background="DarkOrange"  Foreground="DarkBlue" FontWeight="ExtraBold" Click="Btn_Click"></Button>
+            <Button Content="17" Tag="0" Height="80" Width="80" Margin="20,0,20,0" Background="DarkOrange"  Foreground="DarkBlue" FontWeight="ExtraBold" Click="Btn_Click"></Button>
+            <Button Content="18" Tag="100" Height="80" Width="80" Margin="20,0,20,0" Background="DarkOrange"  Foreground="DarkBlue" FontWeight="ExtraBold" Click="Btn_Click"></Button>
+            <Button Content="19" Tag="0" Height="80" Width="80" Margin="20,0,20,0" Background="DarkOrange"  Foreground="DarkBlue" FontWeight="ExtraBold" Click="Btn_Click"></Button>
+            <Button Content="20" Tag="0" Height="80" Width="80" Margin="20,0,20,0" Background="DarkOrange"  Foreground="DarkBlue" FontWeight="ExtraBold" Click="Btn_Click"></Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button Content="21" Tag="0" Height="80" Width="80"  Margin="10,0,10,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+            <Button Content="22" Tag="0" Height="80" Width="80" Margin="10,0,10,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+            <Button Content="23" Tag="0" Height="80" Width="80" Margin="10,0,10,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+            <Button Content="24" Tag="0" Height="80" Width="80" Margin="10,0,10,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+            <Button Content="25" Tag="10000" Height="80" Width="80" Margin="10,0,10,0" Foreground="AntiqueWhite" FontWeight="ExtraBold" Background="Crimson" Click="Btn_Click"></Button>
+        </StackPanel>
+       
+       
+        
+    </StackPanel>
+</Window>

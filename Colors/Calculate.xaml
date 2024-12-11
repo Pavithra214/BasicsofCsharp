@@ -1,0 +1,81 @@
+﻿<Window x:Class="Colors.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Colors"
+        mc:Ignorable="d"
+        Title="SIMPLE CALCULATOR" Height="420" Width="350">
+    <StackPanel>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top">
+            <Label x:Name="Std" Content="Standard" FontWeight="Bold" FontSize="10" Background="WhiteSmoke"></Label>
+           <TextBox x:Name="txtrslt" Background="WhiteSmoke" Text="0" IsReadOnly="True" Height="120" FontWeight="Bold" FontSize="20" TextAlignment="Right" Margin="0,0,0,8"></TextBox>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center">
+        <StackPanel Orientation="Horizontal" VerticalAlignment=" Top" HorizontalAlignment=" Center">
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button Content="1" Height="50" Width="70" BorderThickness="0" FontSize=" 20" FontWeight="Bold"  Margin="1" Background="White" x:Name="btn1" Click="Num_Click">
+                    </Button>
+                </Border>
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button Content="2" Height="50" Width="70" Margin="1" BorderThickness="0" FontSize="20" FontWeight="Bold" Background="White" x:Name="btn2" Click="Num_Click"></Button>
+                </Border>
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button Content="3" Height="50" Width="70" Margin="1" BorderThickness="0" FontSize="20" FontWeight="Bold" Background="White" x:Name="btn3" Click="Num_Click"></Button>
+                </Border>
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button Content="4" Height="50" Width="70" Margin="1" BorderThickness="0" FontSize="20" FontWeight="Bold" Background="White" x:Name="btn4" Click="Num_Click"></Button>
+                </Border>
+            </StackPanel>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment=" Top" HorizontalAlignment=" Center">
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button  Content="5" Height="50" Width="70" FontSize=" 20" FontWeight="Bold" BorderThickness="0" Margin="1" Background="White" x:Name="btn5" Click="Num_Click"></Button>
+                </Border>
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button  Content="6" Height="50" Width="70" Margin="1" FontSize=" 20" FontWeight="Bold" BorderThickness="0" Background="White" x:Name="btn6" Click="Num_Click"></Button>
+                </Border>
+
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button  Content="7" Height="50" Width="70" Margin="1" FontSize=" 20" FontWeight="Bold" BorderThickness="0" Background="White" x:Name="btn7" Click="Num_Click"></Button>
+                </Border>
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button Content="8" Height="50" Width="70" Margin="1" FontSize="20" FontWeight="Bold" BorderThickness="0" Background="White" x:Name="btn8" Click="Num_Click"></Button>
+                </Border>
+            </StackPanel>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment=" Top" HorizontalAlignment=" Center">
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button  Content="9" Height="50" Width="70" FontSize=" 20" FontWeight="Bold"  Margin="1" BorderThickness="0" Background="White" x:Name="btn9" Click="Num_Click"></Button>
+                </Border>
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button  Content="0" Height="50" Width="70" Margin="1" FontSize=" 20" FontWeight="Bold" BorderThickness="0" Background="White" x:Name="btn0" Click="Num_Click"></Button>
+                </Border>
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button Content="C" Height="50" Width="70" Margin="1" FontSize="20" FontWeight="Bold" BorderThickness="0" Background="WhiteSmoke" x:Name="btnc" Click="btnc_Click"></Button>
+                </Border>
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+
+                    <Button Content="=" Height="50" Width="70" Margin="1" FontSize="20" FontWeight="Bold" BorderThickness="0" Background="DodgerBlue" x:Name="btneq" Click="btneq_Click"></Button>
+                </Border>
+            </StackPanel>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment=" Top" HorizontalAlignment=" Center">
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button x:Name="bttnadd" Content="+" Height="50" Width="70" Margin="1" Background="WhiteSmoke" BorderThickness="0" FontSize="20" FontWeight="Bold" Click="Oper_Click"></Button>
+                </Border>
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button x:Name="bttnsub" Content="-" Height="50" Width="70" Margin="1" Background="WhiteSmoke" BorderThickness="0" FontSize="20" FontWeight="Bold" Click="Oper_Click"></Button>
+                </Border>
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5">
+                    <Button x:Name="bttnmul" Content="*" Height="50" Width="70" Margin="1" Background="WhiteSmoke" BorderThickness="0" FontSize="20" FontWeight="Bold" Click="Oper_Click"></Button>
+                </Border>
+                <Button x:Name="bttndiv" Content="/" Height="50" Width="70" Margin="1" Background="WhiteSmoke" BorderThickness="0" FontSize="20" FontWeight="Bold" Click="Oper_Click"></Button>
+            
+            </StackPanel>
+       
+        </StackPanel>
+    </StackPanel>
+
+</Window>

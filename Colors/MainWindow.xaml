@@ -1,0 +1,30 @@
+﻿<Window x:Class="Colors.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Colors"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="800">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
+        <Label x:Name="y" Background=" Yellow" Width="30" Height="30" Margin="2,2,2,2" MouseEnter="y_MouseEnter" MouseLeave="y_MouseLeave"></Label>
+         <Label x:Name="g" Background=" Green" Width="30" Height="30" Margin="2,2,2,2" MouseEnter="g_MouseEnter" MouseLeave="g_MouseLeave"></Label>
+         <Label x:Name="b" Background="DarkBlue" Width="30" Height="30" Margin="2,2,2,2" MouseEnter="b_MouseEnter" MouseLeave="b_MouseLeave"></Label>
+          </StackPanel>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Label x:Name="o" Background="Orange"  Width="30" Height="30" Margin="2,2,2,2" MouseEnter="o_MouseEnter" MouseLeave="o_MouseLeave"></Label>
+            <Label x:Name="a" Background="Aquamarine"   Width="30" Height="30" Margin="2,2,2,2" MouseEnter="a_MouseEnter" MouseLeave="a_MouseLeave"></Label>
+            <Label x:Name="c" Background="Chocolate"  Width="30" Height="30" Margin="2,2,2,2" MouseEnter="c_MouseEnter" MouseLeave="c_MouseLeave"></Label>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Label x:Name="f" Background="Fuchsia"   Width="30" Height="30" Margin="2,2,2,20" MouseEnter="f_MouseEnter"></Label>
+            <Label x:Name="h" Background="HotPink"    Width="30" Height="30" Margin="2,2,2,20" MouseEnter="h_MouseEnter"></Label>
+            <Label x:Name="l" Background="LightPink"    Width="30" Height="30" Margin="2,2,2,20" MouseEnter="l_MouseEnter"></Label>
+        </StackPanel>
+        
+        <Label x:Name="main" HorizontalAlignment="Center" Background="Gray"  Width="100" Height="100" MouseEnter="main_MouseEnter" MouseLeave="main_MouseLeave"></Label>
+    </StackPanel>
+</Window>

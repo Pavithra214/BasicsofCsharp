@@ -1,0 +1,25 @@
+﻿<Window x:Class="Colors.StringEG"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Colors"
+        mc:Ignorable="d"
+        Title="StringEG" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="User Name:"></Label>
+        <TextBox x:Name="txtname"></TextBox>
+        <Button Content="Click here" x:Name="btnname" Click="btnname_Click" Width="80" Height="50"></Button>
+        <Label Content="Language"></Label>
+        <CheckBox Content="C" IsChecked="True"></CheckBox>
+        <CheckBox Content="C++"></CheckBox>
+        <CheckBox Content="C#"></CheckBox>
+        <Label Content="Are you a student?"></Label>
+        <RadioButton Content="Yes" IsChecked="True" GroupName="S"></RadioButton>
+        <RadioButton Content="No" GroupName="S"></RadioButton>
+        <Label Content="Gender"></Label>
+        <RadioButton Content="Male" GroupName="G"></RadioButton>
+        <RadioButton Content="Female" GroupName="G" IsChecked="True"></RadioButton>
+        
+    </StackPanel>
+</Window>
